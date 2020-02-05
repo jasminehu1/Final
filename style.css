@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Dosis|Indie+Flower|Righteous|Roboto+Mono|Source+Code+Pro|Special+Elite&display=swap');
+/* 
+font-family: 'Amatic SC', cursive;
+font-family: 'Dosis', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Righteous', cursive;
+font-family: 'Special Elite', cursive;
+*/
+
+
+body {
+    font-style: Arial;
+    background: #d66d75;
+    background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+h1 {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    font-size: 80px;
+    margin: 30px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+    z-index: 10;
+}
+.header:hover{
+    color: cadetblue;
+}
+.animation-box {
+    width: 100%;
+    height: 27.5rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+.first-text {
+    font-family: 'Amatic SC', cursive;
+    font-size: 4rem;
+    position: absolute;
+    left: 2.5rem;
+    top: 5rem;
+    opacity: 0;
+    animation: topFadeOut 5s infinite;
+    color: black;
+    z-index: 10;
+}
+  
+.second-text {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3rem;
+    position: absolute;
+    top: 8.5rem;
+    opacity: 0;
+    animation: rightFadeInOut 8s infinite;
+    animation-delay: 3s;
+    color: black;
+    z-index: 10;
+}
+  
+.third-text {
+    font-family: 'Amatic SC', cursive;
+    transform: rotate(-90deg);
+    font-size: 2rem;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    opacity: 0;
+    animation: topFadeOutVertical 6s infinite;
+    animation-delay: 5.5s;
+    color: black;
+    white-space: nowrap;
+    z-index: 10;
+} 
+.fourth-text {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3rem;
+    position: absolute;
+    top: 10.5rem;
+    left: 10%;
+    opacity: 0;
+    color: black;
+    animation-name: fadeInOut 9s infinite;
+    animation-delay: 3.5s;
+    z-index: 10;
+}
+  
+.fifth-text {
+    font-family: 'Amatic SC', cursive;
+    font-size: 4rem;
+    position: absolute;
+    left: 5%;
+    bottom: 25%;
+    opacity: 0;
+    color: black;
+    animation: bottomFadeOut 9s infinite;
+    animation-delay: 6s;
+    z-index: 10;
+}
+  @keyframes topFadeOut {
+    0% {
+      position: absolute;
+      top: -3rem;
+      opacity: 0;
+    }
+  
+    75% {
+      position: absolute;
+      top: 25%;
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes bottomFadeOut {
+    0% {
+      position: absolute;
+      bottom: -5rem;
+      opacity: 0;
+    }
+  
+    75% {
+      position: absolute;
+      bottom: 25%;
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+    
+  }
+  
+  @keyframes topFadeOutVertical {
+    0% {
+      position: absolute;
+      top: -3rem;
+      opacity: 0;
+    }
+  
+    75% {
+      position: absolute;
+      top: 45%;
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes rightFadeInOut {
+    0% {
+      position: absolute;
+      right: -3rem;
+      opacity: 0;
+    }
+  
+    75% {
+      position: absolute;
+      right: 10rem;
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+      right: 10rem;
+    }
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+  
+    45% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0%;
+    }
+  }
+.margins{
+    padding-right: 40px;
+    padding-left: 40px;
+}
+  
+h2 {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 40px;
+    border: black 2px solid;
+    border-radius: 10px;
+    
+    z-index: 10;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.paul{
+    width: 600px;
+    height: 500px;
+}
+.writing{
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+}
+.project1{
+    font-size: 30px;
+    padding:40px;
+    background-color: rgb(206, 252, 229);
+}
+.projectOne{
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  
+}
+.left{
+    background-color:#14C2CC;
+    border-radius: 30px;
+}
+.left{
+    animation: bg-change 5s ease infinite;
+}
+.right{
+    background-color:#14C2CC;
+    border-radius: 30px;
+}
+.right{
+    animation: bg-change 5s ease infinite;
+}
+@keyframes bg-change {
+	0%, 100% {
+		filter:hue-rotate(0deg);
+	}
+	50% {
+		filter:hue-rotate(45deg);
+	}
+}
+.website1{
+    width: 400px;
+    height: 500px;
+}
+.website2{
+    width: 400px;
+    height: 500px;
+}
+.leaf{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+}
+.svg{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+}
+.st0{fill:#94BD40;}
+.st1{fill:#6C754D;}
+
+.st0:hover {
+    animation: colorshift 3s ease infinite;
+}
+  @keyframes colorshift {
+    0% {
+      fill: yellow;
+    }
+    50%{
+        fill:orange;
+    }
+    100% {
+      fill: yellow;
+    }
+}
+
+.wrapper2{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    column-gap: 10px;
+}
+.project3{
+    width: 400px;
+    height: 400px;
+}
+.randomBox{
+    border:  #fbc2eb 20px solid;
+    border-radius: 50px;
+    color:  #fbc2eb;
+}
+.invisible{
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    padding: 20px;
+}
+.maincontainer{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 20px;
+  }
+  
+  .imageClass {
+    width: 100%;
+    height: auto;
+  }
+    
+  .descriptionClass {
+    width: 100%;
+  }
+  button{
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    background-color: #d66d75;
+    border: none;
+    border-radius: 40px;
+    width: 100px;
+    height: 200px;
+    margin-left: 60px;
+}
+  .containerNy {
+    width: 200px;
+    height: 850px;
+    padding: 30px;
+    border: 3px solid blue;
+    border-radius: 40px;
+    background-color: rgb(206, 252, 229);
+  }
+  .containerJapan {
+    width: 200px;
+    height: 850px;
+    padding: 30px;
+    border: 3px solid pink;
+    border-radius: 40px;
+    background-color: rgb(206, 252, 229);
+  } 
+  .containerSeoul {
+    width: 200px;
+    height: 850px;
+    padding: 30px;
+    border: 3px solid violet;
+    border-radius: 40px;
+    background-color: rgb(206, 252, 229);
+  }
+  .containerParis {
+    width: 200px;
+    height: 850px;
+    padding: 30px;
+    border: 3px solid rgb(101, 206, 255);
+    border-radius: 40px;
+    background-color: rgb(206, 252, 229);
+  }
+  .containerLondon {
+    width: 200px;
+    height: 850px;
+    padding: 30px;
+    border: 3px solid rgb(184, 184, 184);
+    border-radius: 40px;
+    background-color: rgb(206, 252, 229);
+  }
+  .containerIceland {
+    width: 200px;
+    height: 850px;
+    padding: 30px;
+    border: 3px solid yellow;
+    border-radius: 40px;
+    background-color: rgb(206, 252, 229);
+  }
+
+@media (min-width: 500px) {
+    .paul{
+        width: 300px;
+        height: 400px;
+    }
+    .project1{
+        font-size: 30px;
+        padding:40px;
+    }
+    h2 {
+        font-family: 'Righteous', cursive;
+        text-align: center;
+        font-size: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 40px;
+        border: black 2px solid;
+        border-radius: 10px;
+    }
+    .project3{
+        width: 300px;
+        height: 300px;
+    }
+    .wrapper{
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    
+  }
+  .wrapper2{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    column-gap: 10px;
+}
+.column2{
+  padding-top: 40px;
+}
+}
+@media (min-width: 1000px) {
+    h2 {
+        font-family: 'Righteous', cursive;
+        text-align: center;
+        font-size: 40px;
+        margin-left: 200px;
+        margin-right: 200px;
+        padding: 40px;
+        border: black 2px solid;
+        border-radius: 10px;
+    }
+    .paul{
+        width: 600px;
+        height: 600px;
+    }
+    .writing{
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    .codes{
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    .project1{
+      line-height: 40px;
+        font-size: 40px;
+        padding:30px;
+    }
+    .website1{
+        width: 800px;
+        height: 500px;
+    }
+    .website2{
+        width: 800px;
+        height: 500px;
+    }
+   
+    .project3{
+        width: 600px;
+        height: 600px;
+    }
+    .randomBox{
+        margin-left: 100px;
+        width: 400px;
+        height:250px;
+        border:  #fbc2eb 20px solid;
+        border-radius: 50px;
+        color:  #fbc2eb;
+    }
+    .invisible{
+        font-family: 'Righteous', cursive;
+        text-align: center;
+        font-size: 50px;
+        margin: 10px;
+        padding: 20px;
+        padding-top: 80px;
+    } 
+}
+@media (min-width: 400px){
+    .cities{
+      text-align: center;
+      font-size: 40px;
+    }
+    .maincontainer{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }  
+  }
+  @media (min-width: 750px){
+    .cities{
+      text-align: center;
+      font-size: 60px;
+    }
+    .maincontainer{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }  
+  }
+  
+  @media (min-width: 1000px){
+    .cities{
+      text-align: center;
+      font-size: 100px;
+    }
+    .maincontainer{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  
